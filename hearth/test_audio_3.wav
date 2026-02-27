@@ -1,0 +1,1 @@
+{"detail":"TTS error: 400 INVALID_ARGUMENT. {'error': {'code': 400, 'message': 'Model does not support the requested response modalities: audio', 'status': 'INVALID_ARGUMENT'}}"}
