@@ -10,6 +10,7 @@ import { ForgivenessWeaver } from './pages/manager/ForgivenessWeaver';
 import { OpportunityForge } from './pages/manager/OpportunityForge';
 import { StrengthsPortrait } from './pages/manager/StrengthsPortrait';
 import { ServiceVanguard } from './pages/manager/ServiceVanguard';
+import { DepartureDossier } from './pages/manager/DepartureDossier';
 
 export default function App() {
   const role = useAppStore(s => s.role);
@@ -31,6 +32,7 @@ export default function App() {
             <Route path="forgiveness" element={<ForgivenessWeaver />} />
             <Route path="forge" element={<OpportunityForge />} />
             <Route path="service" element={<ServiceVanguard />} />
+            <Route path="departure" element={<DepartureDossier />} />
           </Route>
         </Route>
       </Routes>

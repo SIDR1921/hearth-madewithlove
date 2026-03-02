@@ -59,3 +59,10 @@ export async function generateServiceRadar(employeeName, currentSkills, upcoming
 export async function generateIncubatorProject(employeeName, currentSkills) {
     return apiFetch('/incubator/generate-project', { employee_name: employeeName, current_skills: currentSkills });
 }
+
+// ─── DEPARTURE DOSSIER APIs ────────────────
+
+// Generate Highly Empathetic Layoff Offboarding Information
+export async function generateDepartureDossier(employeeName, role, projects, isMigrant) {
+    return apiFetch('/departure/dossier', { employee_name: employeeName, role, projects, is_migrant: isMigrant });
+}

@@ -1,16 +1,46 @@
-# React + Vite
+# Hearth: The People-First Cultural Operating System
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## The Problem
+Modern enterprise HR software (like Workday or traditional ATS platforms) was built for "Personnel Compliance"—treating human beings as inventory, billable resources, or overhead costs. This structural dehumanization leads to massive, invisible friction: "Moral Injury" for leaders executing clinical layoffs, profound isolation ("proximity without connection") for benched employees, and toxic feedback loops (PIPs) that prioritize blame over growth. 
 
-Currently, two official plugins are available:
+When human value is reduced to metrics, businesses hemorrhage talent, bleed institutional knowledge, and suffer physiological burnout. 
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+## The Solution: Hearth
+Hearth is an AI-powered Cultural Operating System designed to structurally embed empathy, dignity, and radical honesty into the fabric of an organization. Built on Softway’s 6 Pillars of a People-First Culture (Inclusion, Forgiveness, Love, Vulnerability, Empowerment, Honesty), Hearth weaponizes Gemini 2.5 Flash to replace adversarial HR workflows with protective, proactive, emotionally intelligent tooling.
 
-## React Compiler
+By shifting HR from "Compliance" to "Human Resource Advocacy," Hearth proves that Love as a Strategy isn't just a corporate buzzword—it is the ultimate driver of system resilience, psychological safety, and hyper-velocity innovation.
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+---
 
-## Expanding the ESLint configuration
+## Core Modules & Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+### 1. The Active Listener (Anti-Loneliness)
+*   **The Problem:** 58% of employees feel deeply lonely despite working surrounded by colleagues.
+*   **The Feature:** An embedded, multi-lingual AI companion (Aria). Powered by native Gemini 2.5 Flash audio generation and specific "director's notes," Aria detects psychological distress, speaks in a calm, highly empathetic human voice, and validates the employee's emotions. It provides immediate, judgment-free support and escalates to human resources if crisis is detected.
+
+### 2. Dignified Offboarding & The Departure Legacy (Anti-Dehumanization)
+*   **The Problem:** Traditional layoffs are clinical, isolating, and leave deep "moral injuries" on both leaders and survivors.
+*   **The Feature:** A workflow dedicated solely to the dignity of the exiting employee.
+    *   **The Exit Portal:** Allows the exiting employee to author their own "Departure Narrative," giving them control over how their story is told to the team.
+    *   **The Legacy Handover AI:** An interview system that extracts the employee's undocumented knowledge and "invisible labor," permanently stamping their unwritten contributions into the company's "Human Legacy Vault."
+
+### 3. The Forgiveness Weaver (Anti-Blame)
+*   **The Problem:** Performance Improvement Plans (PIPs) are adversarial legal documents designed to defend the company, not help the employee.
+*   **The Feature:** Replaces PIPs with AI-generated "Redemption Frameworks."
+    *   Generates highly empathetic, radically honest 1:1 manager talking points.
+    *   Uses Gemini to synthesize a curated, 4-week **YouTube Learning Path** tailored exactly to the employee's skill gaps and learning style, shifting the focus from punishment to paid upskilling.
+
+### 4. Impact & Identity Portraits (Anti-Personnel Metrics)
+*   **The Problem:** Performance is often graded on superficial Jira velocity or lines of code, punishing the "invisible labor" of mentorship and clean architecture.
+*   **The Feature:** The "GitHub MCP" Scanner. It deeply analyzes an employee's public/internal commit history to generate a massive, narrative "Identity Portrait." It highlights hidden mastery (e.g., "The Architectural Steward") and translates their code contributions directly into UN Sustainable Development Goals (SDG 8 metrics).
+
+### 5. Multilingual Inclusion Agent
+*   **The Problem:** Language barriers create systemic exclusion for non-native speakers, forcing them to conform to the dominant culture.
+*   **The Feature:** Deep integration of Gemini's translation capabilities wrapped in rigorous cultural guidelines. It translates the entire platform—maintaining tone, empathy, formatting, and structural dignity—ensuring a newly immigrated employee feels exactly as supported in Hindi or Kannada as they would in English.
+
+---
+
+## Technical Stack
+*   **Frontend:** React 18, Vite, TailwindCSS (Dark/Dignified UI), Zustand, React Router DOM, Lucide Icons.
+*   **Backend:** FastAPI (Python 3.14), Uvicorn.
+*   **AI Engine:** Google GenAI SDK (`gemini-2.5-flash-preview`), Native Audio Modalities (`gemini-2.5-flash-preview-tts`).

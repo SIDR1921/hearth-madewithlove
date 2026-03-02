@@ -1,7 +1,7 @@
 import React from 'react';
 import { Outlet, Link, useLocation } from 'react-router-dom';
 import { useAppStore } from '../store/useAppStore';
-import { Flame, Home, Mic, Compass, Scroll, Hammer, ArrowLeft, Github, Shield } from 'lucide-react';
+import { Flame, Home, Mic, Compass, Scroll, Hammer, ArrowLeft, Github, Shield, FileDown } from 'lucide-react';
 
 const employeeNav = [
     { path: '/employee/home', label: 'Home', icon: Home },
@@ -14,6 +14,7 @@ const managerNav = [
     { path: '/manager/strengths', label: 'GitHub Strengths', icon: Github },
     { path: '/manager/forgiveness', label: 'Coaching', icon: Scroll },
     { path: '/manager/forge', label: 'Forge', icon: Hammer },
+    { path: '/manager/departure', label: 'Departure Dossier', icon: FileDown },
 ];
 
 export function Shell() {

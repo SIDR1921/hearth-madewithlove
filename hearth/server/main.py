@@ -5,7 +5,7 @@ from dotenv import load_dotenv
 
 load_dotenv()
 
-from .routes import listener, coaching, forge, translate, profile, tts, service_care, incubator
+from .routes import listener, coaching, forge, translate, profile, tts, service_care, incubator, departure
 
 app = FastAPI(
     title="Hearth — Cultural Operating System API",
@@ -29,6 +29,7 @@ app.include_router(translate.router)
 app.include_router(profile.router)
 app.include_router(tts.router)
 app.include_router(incubator.router)
+app.include_router(departure.router)
 
 @app.get("/")
 async def root():
