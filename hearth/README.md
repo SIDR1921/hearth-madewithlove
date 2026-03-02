@@ -42,5 +42,52 @@ By shifting HR from "Compliance" to "Human Resource Advocacy," Hearth proves tha
 
 ## Technical Stack
 *   **Frontend:** React 18, Vite, TailwindCSS (Dark/Dignified UI), Zustand, React Router DOM, Lucide Icons.
-*   **Backend:** FastAPI (Python 3.14), Uvicorn.
-*   **AI Engine:** Google GenAI SDK (`gemini-2.5-flash-preview`), Native Audio Modalities (`gemini-2.5-flash-preview-tts`).
+*   **Backend:** FastAPI (Python 3.10+), Uvicorn.
+*   **AI Engine:** Google GenAI SDK (`gemini-2.5-flash`), Native Audio Modalities (`gemini-2.5-flash-tts`).
+
+---
+
+## Proof of Concept (POC) Submission
+
+**Hearth** was developed as a winning Proof of Concept. This repository contains the submission build, demonstrating the core viability of our AI-powered Cultural Operating System. The current implementation showcases the primary workflows (The Active Listener, Dignified Offboarding, The Forgiveness Weaver, and Multilingual Inclusion) using the Gemini 2.5 Flash API for both text inference and low-latency native audio generation.
+
+---
+
+## How to Run Locally
+
+### Prerequisites
+- Node.js (v18+)
+- Python (v3.10+)
+- A Google Gemini API Key
+
+### 1. Clone the repository
+```bash
+git clone https://github.com/SIDR1921/hearth-madewithlove.git
+cd hearth
+```
+
+### 2. Setup the Data Environment
+Create a `.env` file in the root directory and add your API credentials:
+```env
+GEMINI_API_KEY=your_gemini_api_key_here
+```
+
+### 3. Start the Backend (FastAPI)
+```bash
+cd server
+pip install -r requirements.txt
+uvicorn main:app --reload --port 8000
+```
+*The backend runs on `http://localhost:8000`.*
+
+### 4. Start the Frontend (React/Vite)
+Open a new terminal window:
+```bash
+# From the root directory
+npm install
+npm run dev
+```
+*The frontend runs on `http://localhost:5173`.*
+
+> [!NOTE]
+> Make sure both servers are running simultaneously for the application to function correctly. The frontend proxies API requests to the Python backend.
